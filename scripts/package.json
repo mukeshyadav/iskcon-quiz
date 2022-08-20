@@ -1,0 +1,30 @@
+{
+  "name": "get-help-builder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.11.47",
+    "exceljs": "^4.3.0",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "engines": {
+    "node": "^16.16.0",
+    "pnpm": "^7.6.0"
+  },
+  "packageManager": "pnpm@7.6.0",
+  "volta": {
+    "node": "16.16.0"
+  },
+  "type":"module"
+}
