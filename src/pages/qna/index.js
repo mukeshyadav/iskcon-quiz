@@ -8,9 +8,12 @@ import { createResponse } from "../../handlers/add-response";
 const QnAView = () => {
   const { groupId, questionId } = useParams();
   const [qnaStatus, setQnaStatus] = useState(true);
-  const { name, mobile, group } = JSON.parse(
-    sessionStorage.getItem("participant")
-  );
+  const participant = sessionStorage.getItem("participant");
+  const {
+    name = "",
+    mobile = "",
+    group = "",
+  } = participant ? JSON.parse(participant) : {};
   const { questionId: currentQuestionId } = useParams();
   const navigate = useNavigate();
 

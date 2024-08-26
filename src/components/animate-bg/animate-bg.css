@@ -1,0 +1,16 @@
+/* animate-bg.css */
+.animation-container {
+    position: fixed; /* Fix to cover the whole viewport */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /* Hide balloons going out of the viewport */
+    pointer-events: none; /* Ensure it doesn't interfere with user interactions */
+}
+
+.balloon {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    pointer-events: none; /* Ensure it doesn’t intercept clicks */
+}

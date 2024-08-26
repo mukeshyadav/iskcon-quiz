@@ -20,7 +20,7 @@ const RegisterView = () => {
   const onSubmit = (data) => {
     const { group } = data;
     sessionStorage.setItem("participant", JSON.stringify(getValues()));
-    navigate(`qna/${group}/0`);
+    navigate(`/qna/${group}/0`);
     reset();
   };
   const groups = [

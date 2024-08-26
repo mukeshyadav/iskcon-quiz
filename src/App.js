@@ -5,7 +5,7 @@ import Layout from "./components/layout";
 import RegisterView from "./pages/register";
 import QnAView from "./pages/qna";
 import ResultView from "./pages/results";
-import EndView from "./pages/end";
+import VideoBackground from "./pages/splash/splash";
 
 const client = new QueryClient({
   defaultOptions: {
@@ -21,7 +21,9 @@ const App = () => {
       <QueryClientProvider client={client}>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route path="/" element={<RegisterView />} />
+            <Route path="/" element={<VideoBackground />} />
+            <Route path="/register" element={<RegisterView />} />
+            <Route path="/register" element={<RegisterView />} />
             <Route path="/qna/:groupId/:questionId" element={<QnAView />} />
             <Route path="/result" element={<ResultView />} />
           </Route>

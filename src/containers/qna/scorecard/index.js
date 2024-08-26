@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
 
 const Scorecard = ({ qna }) => {
-  const { name } = JSON.parse(sessionStorage.getItem("participant"));
+  const participant = sessionStorage.getItem("participant");
+  const { name = "" } = participant ? JSON.parse(participant) : {};
   const { questionId } = useParams();
 
   const list = new Array(10).fill("");
