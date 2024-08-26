@@ -44,19 +44,19 @@ const QnAView = () => {
           qnaStatus={qnaStatus}
         />
       </div>
-      <div className="w-3/12 p-5 min-h-[100vh] flex flex-col bg-slate-300">
+      <div className="w-2/12 p-5 min-h-[100vh] flex flex-col bg-opacity-5 bg-purple-50">
         <Scorecard qna={qnaStatus} />
         <div className="text-center flex flex-col">
           {questionId < 9 ? (
             <button
-              className="bg-orange-600 text-white rounded-md font-semibold text-xl py-3 px-5 border-orange-500 border cursor-pointer"
+              className="bg-purple-800 text-white rounded-md font-semibold text-xl py-3 px-5 border-purple-600 border cursor-pointer"
               onClick={() => navigateToNextQuestion()}
             >
-              Next Question &gt;&gt;
+              अगला सवाल
             </button>
           ) : null}
           <button
-            className="bg-slate-900 text-white rounded-md mt-5 font-semibold text-xl py-3 px-5 border-orange-500 border cursor-pointer"
+            className="bg-red-800 text-white rounded-md mt-5 font-semibold text-xl py-3 px-5 border-red-600 border cursor-pointer"
             onClick={async () => {
               await submitAnswers();
               navigate("/");

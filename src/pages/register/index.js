@@ -34,7 +34,7 @@ const RegisterView = () => {
   return (
     <>
       <AppHeader />
-      <div className="container m-auto pt-12 flex w-[75%] justify-between items-center">
+      <div className="container m-auto p-10 flex w-[75%] justify-between items-center bg-slate-100 rounded ">
         <div className="w-1/2">
           <div className="text-lg font-bold bg-orange-600 text-white py-2 px-5 mb-5 rounded-full">
             Participant Info

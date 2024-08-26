@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
+ body {
+    height: 100vh;
+    background: radial-gradient(circle, rgba(92, 31, 136, 0.9) 0%, rgba(32, 0, 64, 0.9) 60%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    animation: lightAnimation 8s infinite;
+    font-size: 16px;
+    margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,17 +17,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes lightAnimation {
+    0% {
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    50% {
+        background-position: center;
+        background-size: 150% 150%;
+    }
+    100% {
+        background-position: center;
+        background-size: 100% 100%;
+    }
 }
 
 .logo {
-  background: blue url("./images.jpeg") 0 0 no-repeat;
+  background:transparent url("./logo-n.png") 0 0 no-repeat;
   background-size: contain;
   display: inline-block;
-  margin: 0 auto;
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
+  height: 250px;
+  width: 250px;
 }

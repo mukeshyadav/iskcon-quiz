@@ -21,7 +21,7 @@ const App = () => {
       <QueryClientProvider client={client}>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route path="/" element={<EndView />} />
+            <Route path="/" element={<RegisterView />} />
             <Route path="/qna/:groupId/:questionId" element={<QnAView />} />
             <Route path="/result" element={<ResultView />} />
           </Route>

@@ -1,0 +1,38 @@
+.kbc-option {
+    padding: 4px;
+    clip-path: polygon(0% 50%, 2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%);
+    background: linear-gradient(270deg, #431c6a, rgb(206, 134, 0), #431c6a);
+    background-size: 300%; /* Makes the gradient larger than the container */
+    animation: backgroundMove 6s ease-in-out infinite; /* Animation definition */
+}
+
+.kbc-option-text{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    clip-path: polygon(0% 50%, 2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%);
+}
+
+.kbc-question-text-bg-color{
+    background-color: #431c6a;
+}
+
+.kbc-question-option {
+    padding: 4px;
+    clip-path: polygon(0% 50%, 2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%);
+    background: linear-gradient(270deg, #431c6a, #460b81, #431c6a);
+    background-size: 300%; /* Makes the gradient larger than the container */
+    animation: backgroundMove 6s ease-in-out infinite; /* Animation definition */
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%; /* Move from left to right */
+    }
+    100% {
+        background-position: 0% 50%; /* Return to start */
+    }
+}   
