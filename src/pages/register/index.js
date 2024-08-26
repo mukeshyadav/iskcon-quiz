@@ -29,6 +29,16 @@ const RegisterView = () => {
     { value: 3, label: "Group 3" },
     { value: 4, label: "Group 4" },
     { value: 5, label: "Group 5" },
+    { value: 6, label: "Group 6" },
+    { value: 7, label: "Group 7" },
+    { value: 8, label: "Group 8" },
+    { value: 9, label: "Group 9" },
+    { value: 10, label: "Group 10" },
+    { value: 11, label: "Group 11" },
+    { value: 12, label: "Group 12" },
+    { value: 13, label: "Group 13" },
+    { value: 14, label: "Group 14" },
+    { value: 15, label: "Group 15" },
   ];
 
   return (
