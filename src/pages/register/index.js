@@ -34,11 +34,6 @@ const RegisterView = () => {
     { value: 8, label: "Group 8" },
     { value: 9, label: "Group 9" },
     { value: 10, label: "Group 10" },
-    { value: 11, label: "Group 11" },
-    { value: 12, label: "Group 12" },
-    { value: 13, label: "Group 13" },
-    { value: 14, label: "Group 14" },
-    { value: 15, label: "Group 15" },
   ];
 
   return (
@@ -139,7 +134,7 @@ const RegisterView = () => {
           <ol className="text-xl my-4 font-bold">
             <li className="py-2">10 प्रश्न हैं</li>
             <li className="py-2">
-              प्रत्येक प्रश्न का उत्तर 1 मिनट में देना होता है
+              प्रत्येक प्रश्न का उत्तर 45 seconds में देना होता है
             </li>
             <li className="py-2">प्रत्येक प्रश्न में 1000 अंक हैं</li>
             <li className="py-2">प्रत्येक प्रश्न अनिवार्य है</li>

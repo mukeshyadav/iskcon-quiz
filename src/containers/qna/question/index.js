@@ -20,13 +20,13 @@ const Question = ({ group = "group1", questionNumber = 0, setQnaStatus }) => {
   const [loop, setLoop] = useState(true);
   const [showAnswer, setShowAnswer] = useState(false);
   const [newOptions, setNewOptions] = useState([]);
-  const [timer, setTimer] = useState(Date.now() + 21000);
+  const [timer, setTimer] = useState(Date.now() + 46000);
   const { question, options } = questions[`group${group}`][questionNumber];
 
   useEffect(() => {
     setNewOptions(shuffleArray(options));
     setShowAnswer(false);
-    setTimer(Date.now() + 21000); // Reset timer when question changes
+    setTimer(Date.now() + 46000); // Reset timer when question changes
     setSound(countdownMusic);
     setLoop(true); // Ensure the countdown music loops
   }, [options, questionNumber]);
